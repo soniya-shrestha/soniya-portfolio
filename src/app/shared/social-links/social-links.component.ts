@@ -6,7 +6,7 @@ import { PROFILE } from '../../data/portfolio.data';
   standalone: true,
   imports: [],
   templateUrl: './social-links.component.html',
-  styleUrl: './social-links.component.css'
+  styleUrl: './social-links.component.scss'
 })
 export class SocialLinksComponent {
 p = PROFILE;
