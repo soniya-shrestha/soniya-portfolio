@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">{{ p.name }}</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      aria-label="Toggle menu"
+      (click)="open.set(!open())"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" [class.collapse]="!open()">
+      <ul class="navbar-nav ms-auto">
+        @for (l of links; track l) {
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [href]="'#' + l.toLowerCase()"
+              (click)="open.set(false)"
+              >{{ l }}</a
+            >
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</nav>

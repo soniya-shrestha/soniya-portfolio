@@ -1,0 +1,17 @@
+<app-section id="about" title="About me" [alt]="true">
+  <div class="row g-5 align-items-center">
+    <div class="col-lg-7">
+      <p class="lead mb-0">{{ p.about }}</p>
+    </div>
+    <div class="col-lg-5">
+      <dl class="card border-0 shadow-sm px-4 py-2 mb-0">
+        @for (f of facts; track f.label) {
+          <div class="fact">
+            <dt>{{ f.label }}</dt>
+            <dd>{{ f.value }}</dd>
+          </div>
+        }
+      </dl>
+    </div>
+  </div>
+</app-section>

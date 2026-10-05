@@ -1,0 +1,10 @@
+@if (!failed()) {
+  <img
+    class="av"
+    [src]="src"
+    [alt]="'Photo of ' + name"
+    (error)="failed.set(true)"
+  />
+} @else {
+  <div class="av ph" role="img" [attr.aria-label]="name">{{ initials }}</div>
+}

@@ -1,0 +1,21 @@
+// Styles for <app-about>. Bootstrap utilities cover most of the layout.
+.fact {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+dt {
+  font-weight: 500;
+  color: #6c757d;
+}
+dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}

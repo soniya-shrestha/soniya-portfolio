@@ -1,0 +1,42 @@
+$primary: #1f6f68;
+$body-color: #1d2733;
+$font-family-sans-serif: "Plus Jakarta Sans", system-ui, sans-serif;
+$headings-font-weight: 800;
+$border-radius: 0.6rem;
+@import "bootstrap/scss/bootstrap";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+body {
+  background: #fbfaf8;
+}
+.section-pad {
+  padding: 5rem 0;
+}
+.bg-soft {
+  background: #f1efe9;
+}
+.lead-narrow {
+  max-width: 38rem;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid $primary;
+  outline-offset: 2px;
+}
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2rem;
+  background: rgba($primary, 0.1);
+  color: $primary;
+  font-size: 0.85rem;
+  font-weight: 500;
+}

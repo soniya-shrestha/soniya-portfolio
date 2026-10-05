@@ -1,0 +1,25 @@
+<header id="home" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-7 order-2 order-md-1">
+        <p class="text-primary fw-bold mb-2">Hello, I'm</p>
+        <h1 class="display-4 mb-3">{{ p.name }}</h1>
+        <p class="h3 fw-bold text-secondary mb-3">{{ p.role }}</p>
+        <p class="lead lead-narrow mb-4">{{ p.intro }}</p>
+        <a class="btn btn-primary me-2 mb-2" href="#projects"
+          >See my projects</a
+        >
+        <a
+          class="btn btn-primary me-2 mb-2"
+          [href]="p.cv"
+          download="Soniya_Dangol_CV.pdf"
+          >Download CV</a
+        >
+        <a class="btn btn-primary me-2 mb-2" href="#contact">Contact me</a>
+      </div>
+      <div class="col-md-5 order-1 order-md-2 text-center">
+        <app-avatar [src]="p.photo" [name]="p.name" />
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,19 @@
+<app-section id="contact" title="Contact" [alt]="true">
+  <div class="row g-5 align-items-center">
+    <div class="col-lg-6">
+      <p class="lead mb-4">I'm open to frontend developer roles. Send me a message and I'll get back to you.</p>
+      <a class="btn btn-primary" [href]="p.cv" download="Soniya_Dangol_CV.pdf">Download CV</a>
+    </div>
+    <div class="col-lg-6">
+      <div class="vstack gap-3">
+        @for (i of items; track i.label) {
+          @if (i.href) {
+            <a class="info" [href]="i.href"><small>{{ i.label }}</small><strong>{{ i.value }}</strong></a>
+          } @else {
+            <div class="info"><small>{{ i.label }}</small><strong>{{ i.value }}</strong></div>
+          }
+        }
+      </div>
+    </div>
+  </div>
+</app-section>

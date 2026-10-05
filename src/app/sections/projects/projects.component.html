@@ -1,0 +1,6 @@
+<app-section id="projects" title="Projects" [alt]="true" 
+  ><div class="row g-4">
+    @for (p of projects; track p.name) {
+      <div class="col-md-6 col-lg-4"><app-project-card [project]="p" /></div>
+    }</div
+></app-section>
