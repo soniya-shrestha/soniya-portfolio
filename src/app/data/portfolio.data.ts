@@ -6,7 +6,7 @@ export const PROFILE = {
   location: "Kathmandu, Nepal",
   photo: "assets/soniya.jpg", // put your photo at src/assets/photo.jpg
   cv: "assets/Soniya_Dangol_CV.pdf",
-  linkedin: "https://www.linkedin.com/in/soniya-dangol-8a0982291", // add your LinkedIn URL
+  linkedin: "https://www.linkedin.com/in/soniya-dangol", // add your LinkedIn URL
   github: "https://github.com/soniya-shrestha", // add your GitHub URL
   intro:
     "I build responsive, user-friendly web interfaces with Angular and TypeScript.",
